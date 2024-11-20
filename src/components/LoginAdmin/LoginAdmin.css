@@ -1,0 +1,159 @@
+/* src/pages/LoginAdmin/LoginAdmin.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.login-admin-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/img/bg_login.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-admin-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.login-admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.login-admin-header h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.login-admin-close-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.login-admin-close-button:hover {
+  background: #f1f3f4;
+}
+
+.login-admin-form-group {
+  margin-bottom: 1.25rem;
+}
+
+.login-admin-form-group label {
+  display: block;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.login-admin-input-group {
+  position: relative;
+}
+
+.login-admin-input-container {
+  position: relative;
+}
+
+.login-admin-input-group input,
+.login-admin-input-container input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.login-admin input::placeholder {
+  color: #999;
+}
+
+.login-admin-toggle-password {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.login-admin-forgot-password {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.login-admin-forgot-password a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-admin-forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-admin-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #276749;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-admin-button:hover {
+  background: #1a4731;
+}
+
+.login-admin-divider {
+  margin: 1rem 0;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.login-admin-signup-text {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.login-admin-signup-text a {
+  color: #276749;
+  text-decoration: none;
+}
+
+.login-admin-signup-text a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
